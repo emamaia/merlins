@@ -1,6 +1,13 @@
 import React from 'react'
 import { getPotions } from '../../service/base'
 import CardPotions from '../../components/CardPotions'
+import aging from '../../assets/aging-potion.png'
+import bulgeye from '../../assets/bulgeye-potion.png'
+import dragon from '../../assets/dragon-tonic.png'
+import love from '../../assets/love-potion.png'
+import polyjuice from '../../assets/polyjuice-potion.png'
+import sleeping from '../../assets/sleeping-draught.png'
+
 
 import './style.css'
 
@@ -14,27 +21,34 @@ class Potions extends React.Component {
 
     componentDidMount() {
         getPotions()
-            .then(response => {
-                console.log(response);
-                
-                let lista = []
-                for (var potion in response.data) {
-                    lista.push(potion)
-                }
+            .then(response => {                        
+                let lista = Object.values(response.data.potions)
                 this.setState({
                     listaCard: lista
                 })
+               console.log(this.state.listaCard);
+               
             })
             .catch(error => {
                 console.error(error)
-            })
-
+            })         
+         
     }
 
     render() {
         return (
-            <div>
-                <h3> texto</h3>
+            <div className='container-card__potions'>               
+               {this.state.listaCard.map(item => {
+                            return (
+                                    <CardPotions
+                                        imagem={item.image}
+                                        texto={item.name}
+                                        span={item.price}
+                                    />
+                                                               
+                            )
+                        })
+            }
             </div>
         )
     }
