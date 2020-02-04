@@ -1,0 +1,46 @@
+.container-nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    height: 120px;
+}
+
+.container-nav__buy{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-nav__buy span{
+    color: #c13f0b; 
+}
+
+
+.container-nav__buy p{
+    color: #585757; 
+    font-weight: 700;
+}
+
+
+
+.container-nav__text{
+    color: #c13f0b;
+    font-size: small;
+}
+
+.logo-img{
+    width: 200px;
+    height: 100px;
+}
+
+.icone{
+    width: 30px;
+    height: 30px;
+    margin: 20px
+}
+
+
+.container-nav__text p{
+    margin-top: -15px;
+}

@@ -1,26 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom'
+import Nav from './components/Nav'
+import Navbar from './components/Navbar'
+import Potions from './pages/Potions'
+import Ingredients from './pages/Ingredients'
+import Books from './pages/Books'
+import Supplies from './pages/Supplies'
+import Charms from './pages/Charms'
+import Clearance from './pages/Clearance'
+import Login from './pages/Login'
+
+
 import './App.css';
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav/>
+      <Navbar />
+    <Switch>
+      <div>
+        <Route exact path='/' component={Potions} />
+        <Route path='/ingredients' component={Ingredients} />
+        <Route path='/books' component={Books} />
+        <Route path='/supplies' component={Supplies} />
+        <Route path='/charms' component={Charms} />
+        <Route path='/clearance' component={Clearance} />
+        <Route path='/login' component={Login} />
+
+      </div>
+    </Switch>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
