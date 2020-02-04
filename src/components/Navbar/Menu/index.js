@@ -1,5 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
+import menu from '../../../assets/menu-nav.png'
+
 import '../style.css'
 
 
@@ -26,9 +29,9 @@ class Menu extends React.Component {
         }
         return (
             <div className='nav-menu navbar-links'>
-                <span className={classesDoBotao} onClick={this.handleAbreOuFecha}>
-                    Menu
-        </span>
+                <img src={menu} className={classesDoBotao} onClick={this.handleAbreOuFecha}/>
+                    
+        
                 <ul className={classesDasOpcoes}>
                     <li>
                         <Link to='/' className='navbar-links__ativo'>

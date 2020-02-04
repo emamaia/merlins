@@ -21,34 +21,36 @@ class Potions extends React.Component {
 
     componentDidMount() {
         getPotions()
-            .then(response => {                        
+            .then(response => {
                 let lista = Object.values(response.data.potions)
                 this.setState({
                     listaCard: lista
                 })
-               console.log(this.state.listaCard);
-               
+                console.log(this.state.listaCard);
+
             })
             .catch(error => {
                 console.error(error)
-            })         
-         
+            })
+
     }
 
     render() {
         return (
-            <div className='container-card__potions'>               
-               {this.state.listaCard.map(item => {
-                            return (
-                                    <CardPotions
-                                        imagem={item.image}
-                                        texto={item.name}
-                                        span={item.price}
-                                    />
-                                                               
-                            )
-                        })
-            }
+            <div>
+                <h2>Potions</h2>
+                <div className='container-card__potions'>
+                    {this.state.listaCard.map(item => {
+                        return (
+                            <CardPotions
+                                imagem={item.image}
+                                texto={item.name}
+                                span={item.price}
+                            />
+                        )
+                    })
+                    }
+                </div>
             </div>
         )
     }

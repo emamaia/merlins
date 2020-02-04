@@ -2,7 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 20px;   
-    margin-top: 200px; 
+    align-items: center;     
 }
+
+   
+h2{
+        margin-top: 265px;
+        margin-left: 20px;
+}
+     
+  

@@ -1,4 +1,13 @@
+.card-potion{
+    margin: 5px;
+}
+
 .card-img{
     width: 160px;
     height: 160px;
+}
+
+.card-span{
+    color: #b6390c;
+    margin-left: 5px;
 }

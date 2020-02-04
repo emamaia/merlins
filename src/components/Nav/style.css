@@ -4,6 +4,12 @@
     align-items: center;
     margin-top: 20px;
     height: 120px;
+    background-color: #ffffff;
+    
+}
+
+.text-mobile{
+    color: #585757;
 }
 
 .container-nav__buy{
@@ -27,6 +33,7 @@
 .container-nav__text{
     color: #c13f0b;
     font-size: small;
+   
 }
 
 .logo-img{
@@ -43,4 +50,30 @@
 
 .container-nav__text p{
     margin-top: -15px;
+}
+
+
+@media (max-width: 720px) {
+    .container-nav__text{
+        display: none;
+    }
+
+    .container-nav_mobile{
+        width: 100%;
+        height: 100px;
+    }
+
+  
+    .container-nav__buy{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+   .icone{
+    margin:0;
+   }
+
+     
 }
