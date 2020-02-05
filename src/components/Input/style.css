@@ -3,8 +3,3 @@
     height: 30px;
 }
 
-@media (max-width: 720px) {
-    .input{
-        display: none;
-    }
-}

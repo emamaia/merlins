@@ -13,6 +13,7 @@ function Nav(props) {
                 <img className='logo-img' src={logo} />
                 <Input
                     placeholder='Search our stock'
+                    classe='input-nav'
                 />
                 <div className='container-nav__buy'>
                     <div className='container-nav__text'>

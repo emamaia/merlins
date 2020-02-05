@@ -1,0 +1,21 @@
+.container-selected{
+    padding-top: 265px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-selected img{
+    width: 150px;
+    height: 300px;
+}
+
+
+@media (max-width: 720px) { 
+    .container-selected{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }   
+   }

@@ -15,7 +15,7 @@ function FooterNews(props){
             placeholder = ' Enter your e-mail'
             />
             <Button
-            className= 'btn-footer'
+            classes= 'btn-footer'
             >
                 Submit
             </Button>

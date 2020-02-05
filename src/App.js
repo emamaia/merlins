@@ -10,6 +10,7 @@ import Supplies from './pages/Supplies'
 import Charms from './pages/Charms'
 import Clearance from './pages/Clearance'
 import Login from './pages/Login'
+import PotionSelected from './pages/PotionSelected'
 
 
 import './App.css';
@@ -33,6 +34,7 @@ function App() {
           <Route path='/charms' component={Charms} />
           <Route path='/clearance' component={Clearance} />
           <Route path='/login' component={Login} />
+          <Route path='/potionselected' component={PotionSelected} />
 
         </div>
       </Switch>

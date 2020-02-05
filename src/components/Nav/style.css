@@ -63,6 +63,11 @@
         height: 100px;
     }
 
+    
+    .input-nav{
+        display: none;
+    }
+    
   
     .container-nav__buy{
         flex-direction: column;

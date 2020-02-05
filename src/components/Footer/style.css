@@ -46,6 +46,22 @@
     font-size: 0.8rem;
 }
 
+.container-footer__news{
+    background-color: #ffff;
+    text-align: start;
+    padding: 10px;
+    font-size: 1rem;
+    color: #6e6b6b;
+}
+
+.btn-footer{
+    background-color: #c13f0b;
+    color: #ffff;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+
+}
 
 
 

@@ -38,11 +38,8 @@ h1{
   }
 }
 
-@media (min-width: 720px) {
- 
+@media (min-width: 720px) { 
   .text-mobile{
-      display: none;
-     
-  }
-   
+      display: none;     
+  }   
  }

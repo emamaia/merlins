@@ -11,3 +11,8 @@
     color: #b6390c;
     margin-left: 5px;
 }
+
+.card-btn{
+    background-color: #ffffff;
+    border-width: 0;   
+}
